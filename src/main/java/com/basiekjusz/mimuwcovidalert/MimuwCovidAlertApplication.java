@@ -1,9 +1,11 @@
-package com.basiekjusz.mimuwcovidalert;
+package com.basiekjusz.MimuwCovidAlert;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class MimuwCovidAlertApplication {
 
 	public static void main(String[] args) {
