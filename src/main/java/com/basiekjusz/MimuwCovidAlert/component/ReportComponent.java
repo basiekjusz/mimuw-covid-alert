@@ -17,7 +17,7 @@ public class ReportComponent {
     this.covidReportService = covidReportService;
   }
 
-  @Scheduled(cron = "45 5 16 * * *")
+  @Scheduled(cron = "0 30 11 * * *")
   public void sendDailyReport() {
     CovidDailyReportDto covidDailyReportDto = covidReportService.getDailyReport();
     alertSenderService.sendDailyAlert(covidDailyReportDto);
